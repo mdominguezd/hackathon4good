@@ -5,11 +5,11 @@ Created on Sat Dec  2 18:15:52 2023
 @author: petra
 """
 
-def CalculateSuitability(ID,client_folder,house_folder):
+def CalculateSuitability(client_id,client_folder,house_folder):
 
-    house_df = pd.read_csv(house_folder)
+    house_df = pd.read_csv(house_folder,sep=",")
 
-    client_df = pd.read_csv(client_folder)
+    client_df = pd.read_csv(client_folder,sep=";")
 
     suit_df = pd.DataFrame(house_df["UniqueLocID"])
 
