@@ -5,25 +5,76 @@ Created on Sat Dec  2 18:15:52 2023
 @author: petra
 """
 
-import pandas as pd
-import os
-import datetime
+def CalculateSuitability(ID,client_folder,house_folder):
 
-datafolder = datafolder = "C:\\Data\\hack4good\\data2\\"
+    house_df = pd.read_csv(house_folder)
+
+    client_df = pd.read_csv(client_folder)
+
+    suit_df = pd.DataFrame(house_df["UniqueLocID"])
 
 
-house_fn = "House_Data.csv"
-client_fn = "Client_Data.csv"
+    today = datetime.date.today()
+    age = today.year - client_df.loc[client_df.ID == client_id, "YearofBirth"].values[0]
+    gender = client_df.loc[client_df.ID == client_id, "Gender"].values[0]
+    mental = client_df.loc[client_df.ID == client_id, "MentalHealth"].values[0]
+    service = client_df.loc[client_df.ID == client_id, "Service"].values[0]
+    addiction = client_df.loc[client_df.ID == client_id, "SubstanceAbuse"].values[0]
+    prison = client_df.loc[client_df.ID == client_id, "Prison"].values[0]
+    family = client_df.loc[client_df.ID == client_id, "Family"].values[0]
 
-house_df = pd.read_csv(os.path.join(datafolder, house_fn))
-house_df = house_df.drop(house_df.columns[:2], axis = 1)
+    def geo_mean(iterable):
+        a = np.array(iterable)
+        return a.prod()**(1.0/len(a))
 
-client_df = pd.read_csv(os.path.join(datafolder, client_fn), sep=";")
 
-client_id = str(10019)
+    suit_list = []
 
-today = datetime.date.today()
-age = today.year - client_df.loc[client_df.ID == client_id, "YearofBirth"].value
-year = today.year
-yob = client_df.loc[client_df.ID == client_id, "YearofBirth"].values[0]
+    for index, row in house_df.iterrows():
 
+        suitabilities = []
+
+        if row["MinAge"] < age < row["MaxAge"]:
+            suitabilities.append(1.)
+        else:
+            suitabilities.append(0.)
+
+        if pd.isna(row["Gender"]):
+            suitabilities.append(0.5)
+        elif row["Gender"] == gender:
+            suitabilities.append(1.)
+        else:
+            suitabilities.append(0.)
+
+        if row["MentalHealth"]==mental:
+            suitabilities.append(1.)
+        else:
+            suitabilities.append(0.)
+
+        if row["Service"]==service:
+            suitabilities.append(1.)
+        else:
+            suitabilities.append(0.)
+
+        if pd.isna(row["SubstanceAbuse"]):
+            suitabilities.append(0.5)
+        elif row["SubstanceAbuse"]==addiction:
+            suitabilities.append(1.)
+
+        if pd.isna(row["Prison"]):
+            suitabilities.append(0.5)
+        elif row["Prison"]==prison:
+            suitabilities.append(1.)
+
+        if row["Family"]==family:
+            suitabilities.append(1.)
+        else:
+            suitabilities.append(0.)
+
+        suit = geo_mean(suitabilities)
+
+        suit_list.append(suit)
+
+    suit_df["Suitability"] = suit_list
+
+    return suit_df
