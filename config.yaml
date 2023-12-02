@@ -1,0 +1,19 @@
+credentials:
+  usernames:
+    mdomin:
+      email: martin.dominguez.duran@gmail.com
+      name: Martin Dominguez Duran
+      client: social
+      password: $2b$12$2PJq0vKLuDtTzD3ZPWvnTe5u8MZFfpo4Hug4CgtLCNKoQws.GBwEK # To be replaced with hashed password
+    pbardo:
+      email: rbriggs@gmail.com
+      name: Petra Bardocz
+      client: social
+      password: $2b$12$Dnny1OTG3UuytoV9eCLJhuAO8/KR5IjtzPkE5phUBJVqviekf2mE6 # To be replaced with hashed password
+cookie:
+  expiry_days: 30
+  key: random_signature_key # Must be string
+  name: random_cookie_name
+preauthorized:
+  emails:
+  - martin.dominguez.duran@gmail.com

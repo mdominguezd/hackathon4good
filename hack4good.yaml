@@ -9,6 +9,7 @@ dependencies:
   - pip
   - numpy
   - geopandas
+  - owslib
   - shapely
   - pandas
   - gdal
@@ -22,3 +23,4 @@ dependencies:
     - deta
     - pyogrio
     - streamlit-folium
+    - streamlit-authenticator
