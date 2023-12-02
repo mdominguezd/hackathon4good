@@ -8,8 +8,13 @@ credentials:
     pbardo:
       email: rbriggs@gmail.com
       name: Petra Bardocz
-      client: social
+      client: organization
       password: $2b$12$Dnny1OTG3UuytoV9eCLJhuAO8/KR5IjtzPkE5phUBJVqviekf2mE6 # To be replaced with hashed password
+    asalg:
+      email: rbriggs@gmail.com
+      name: Alejandro Salgueiro
+      client: client
+      password: $2b$12$Dnny1OTG3UuytoV9eCLJhuAO8/KR5IjtzPkE5phUBJVqviekf2mE6 # To be replaced with hashed
 cookie:
   expiry_days: 30
   key: random_signature_key # Must be string
