@@ -6,11 +6,7 @@ from SocialWorker_Interface.form import setup_form
 
 from authenticate import AUTH
 
-st.set_page_config(page_title = 'HagueHaven', page_icon = ":house:", layout = 'centered', menu_items={
-        'Get Help': 'https://www.extremelycoolapp.com/help',
-        'Report a bug': "https://www.extremelycoolapp.com/bug",
-        'About': "# This is a header. This is an *extremely* cool app!"
-    })
+st.set_page_config(page_title = 'HagueHaven', page_icon = ":house:", layout = 'centered')
 
 st.title(':house: HagueHaven')
         
@@ -26,7 +22,8 @@ if name is not None:
 if authentication_status:
 
     if client_status == 'social':
-        c1, c2 = st.columns([5,1])
+        
+        c1, c2 = st.columns([7,1])
 
         with c1:
             st.write(f'Welcome **{st.session_state["name"]}** ')
@@ -34,6 +31,17 @@ if authentication_status:
             authenticator.logout('Logout', 'main', key='unique_key')
         
         ly_sc()
+
+    elif client_status == 'client':
+        
+        c1, c2 = st.columns([7,1])
+        
+        with c1:
+            st.write(f'Welcome **{st.session_state["name"]}** ')
+        with c2:
+            authenticator.logout('Logout', 'main', key='unique_key')
+
+        st.write('Welcome')
     
 elif authentication_status is False:
     st.error('Username/password is incorrect')
