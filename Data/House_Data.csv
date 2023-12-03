@@ -1,0 +1,35 @@
+Zorgaanbieder,UniqueLocID,Adres,Number of places,Y,X,MinAge,MaxAge,Gender,MentalHealth,Service,SubstanceAbuse,Prison,Family,ContactPhone
+Provider 2,LB004,"Vaillantlaan 105- 115, Den Haag ",11,52.0649585,4.3067976,0,999,,FALSE,Basic,,,FALSE,123456789
+Provider 6,LB010,"Assendelftstraat 27-29, Den Haag",17,52.0759398,4.3044167,0,999,,FALSE,Basic,,,FALSE,123456790
+Provider 6,LB011,"Regentesselaan 106, Den Haag",2,52.0764072,4.2831499,0,999,,FALSE,Basic,,,FALSE,123456791
+Provider 5,LB013,"Kepplerstraat 124, Den Haag",7,52.0761634,4.2834881,0,999,,TRUE,Basic,,,FALSE,123456792
+Provider 5,LB014,"Newtonstraat 511, Den Haag",5,52.0737618,4.279598,0,999,,TRUE,Basic,,,FALSE,123456793
+Provider 5,LB015,"Obrechtstraat 325-327, Den Haag",6,52.0827385,4.2774616,0,999,,TRUE,Basic,,,FALSE,123456794
+Provider 5,LB016,"Obrechtstraat 327-a, Den Haag",1,52.0824347,4.2792593,0,999,,TRUE,Basic,,,FALSE,123456795
+Provider 5,LB017,"Voltastraat 12, Den Haag",4,52.0807515,4.2779272,0,999,,TRUE,Basic,,,FALSE,123456796
+Provider 5,LB018,"Van Speijkstraat 61, Den Haag",7,52.0831055,4.2926664,0,999,,TRUE,Basic,,,FALSE,123456797
+Provider 5,LB020,"Gerrit van der Veenlaan 313, Den Haag",3,52.0558023,4.2458714,0,999,,TRUE,Basic,,,FALSE,123456798
+Provider 5,LB021,"A.Petersweg 19, Den Haag",4,52.049314,4.2386278,0,999,,TRUE,Basic,,,FALSE,123456799
+Provider 5,LB022,"L.J. Rogierstraat 39, Den Haag",3,52.0494021,4.2467672,0,999,,TRUE,Basic,,,FALSE,123456800
+Provider 5,LB023,"Loosduinsekade 10, Den Haag",5,52.073557,4.2959622,0,999,,TRUE,Basic,,,FALSE,123456801
+Provider 5,LB024,"Loosduinsekade 81-82, Den Haag",8,52.0725951,4.291156,0,999,,TRUE,Basic,,,FALSE,123456802
+Provider 22,LB025,"Tasmanstraat 61, Den Haag",2,52.0807533,4.2931586,18,999,,TRUE,Basic,TRUE,,FALSE,123456803
+Provider 22,LB026,"Jacob Marisstraat 95, Den Haag",3,52.0646876,4.3106352,18,999,,TRUE,Basic,TRUE,,FALSE,123456804
+Provider 10,LB027,Sneeuwbalstraat 37,2,52.0781638,4.2653111,18,999,,FALSE,Basic,,TRUE,FALSE,123456805
+Provider 11,LP002,"Laan van Meerdervoort 137, Den Haag",7,52.08199,4.2879498,55,999,,TRUE,Plus,,,FALSE,123456806
+Provider 6,LP003,Zwarte weg 74,7,52.0780766,4.3239267,0,999,,FALSE,Plus,,,FALSE,123456807
+Provider 6,LP004,Elandstraat 34,5,52.0817051,4.2996457,0,999,,FALSE,Plus,,,FALSE,123456808
+Provider 6,LP005,Smitstraat 75,6,52.0707881,4.2888822,0,999,,TRUE,Plus,,,FALSE,123456809
+Provider 6,LP006,Conradkade 62,7,52.080151,4.2849875,0,999,,FALSE,Plus,,,FALSE,123456810
+Provider 2,LP007,"Zichtenburglaan 39
+",6,52.0457186,4.2533809,0,999,,FALSE,Plus,,TRUE,FALSE,123456811
+Provider 12,LI010,Julialaan 4 ,,52.0258796,4.2804664,18,30,,TRUE,Intensive,,,FALSE,123456812
+Provider 5,LI014,Scheepmakers-straat 20,10,52.0725416,4.32578,0,999,,TRUE,Intensive,,,FALSE,123456812
+Provider 5,LI042,Spionkopstraat 82,10,52.0608082,4.2947798,19,999,,TRUE,Intensive,,,TRUE,123456812
+Provider 2,HS002,Nieboerweg 125,18,52.0872926,4.2570907,16,23,,FALSE,Immediate shelter,,,FALSE,123456812
+Provider 2,HS005,Ruijsdaelstraat 51,3,52.0689869,4.2992962,0,23,Female,TRUE,Immediate shelter,TRUE,,FALSE,123456813
+Provider 6 ,HS009,Zamenhofstraat 6,32,52.0746696,4.2949586,23,999,Male,FALSE,Immediate shelter,TRUE,,FALSE,123456817
+Provider 6 ,HS010,Schenkweg 60,90,52.0772203,4.3307953,23,999,,FALSE,Immediate shelter,,,FALSE,123456818
+Unknown,HS012,Nieuwe Laantjes 46-1,3,52.1045696,4.2745074,0,999,Female,FALSE,Immediate shelter,,,FALSE,123456819
+Unknown,HS013,Kritzingerstraat 12-14,8,52.0684372,4.2916484,0,999,Female,FALSE,Immediate shelter,,,FALSE,123456820
+Unknown,HS014,Da Costastraat 42,8,52.0785882,4.2954315,0,999,,FALSE,Immediate shelter,,,TRUE,123456821

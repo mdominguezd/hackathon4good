@@ -43,6 +43,3 @@ def layout_house():
                 hs005_df = pd.DataFrame(hs005_data,columns=["ID","Name","Start Date","End"])
                 st.markdown(hs005_df.style.hide(axis="index").to_html(), unsafe_allow_html=True)
                 st.write("Capacity is : 4/6")
-
-
-layout_house()

@@ -1,8 +1,8 @@
 import streamlit as st
 
 from SocialWorker_Interface.layout import layout as ly_sc
-from SocialWorker_Interface.map_shelters import draw_map
-from SocialWorker_Interface.form import setup_form
+from Client_Interface.layout import layout_client as ly_c
+from House_Interface.layout import layout_house as ly_h
 
 from authenticate import AUTH
 
@@ -10,7 +10,6 @@ st.set_page_config(page_title = 'HagueHaven', page_icon = ":house:", layout = 'c
 
 st.title(':house: HagueHaven')
         
-
 authenticator = AUTH()
 
 name, authentication_status, username =  authenticator.login('Login', 'main')
@@ -29,7 +28,7 @@ if authentication_status:
             st.write(f'Welcome **{st.session_state["name"]}** ')
         with c2:
             authenticator.logout('Logout', 'main', key='unique_key')
-        
+
         ly_sc()
 
     elif client_status == 'client':
@@ -41,7 +40,19 @@ if authentication_status:
         with c2:
             authenticator.logout('Logout', 'main', key='unique_key')
 
-        st.write('Welcome')
+        ly_c(10023,"Data/Client_Data.csv","Data/Client_Data.csv")
+
+
+    elif client_status == 'organization':
+
+        c1, c2 = st.columns([7,1])
+        
+        with c1:
+            st.write(f'Welcome **{st.session_state["name"]}** ')
+        with c2:
+            authenticator.logout('Logout', 'main', key='unique_key')
+
+        ly_h()
     
 elif authentication_status is False:
     st.error('Username/password is incorrect')
