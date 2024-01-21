@@ -1,0 +1,17 @@
+python==3.11
+numpy
+geopandas
+owslib
+shapely
+pandas
+gdal
+matplotlib
+dash
+plotly
+pillow
+folium
+streamlit
+deta
+pyogrio
+streamlit-folium
+streamlit-authenticator
