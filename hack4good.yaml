@@ -19,8 +19,8 @@ dependencies:
   - pillow
   - folium
   - pip:
-    - streamlit
+    - streamlit==1.28.2
     - deta
     - pyogrio
     - streamlit-folium
-    - streamlit-authenticator
+    - streamlit-authenticator==0.3.1
