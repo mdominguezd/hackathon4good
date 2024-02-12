@@ -23,3 +23,7 @@ ID,Name,YearofBirth,Gender,MentalHealth,Service,SubstanceAbuse,Prison,Family,Ent
 10021,Petra Bardocz,1984,Female,True,Immediate shelter,True,False,False,True,,,,,
 10022,Alejandro He,1984,Male,True,Immediate shelter,True,True,False,True,,,,,
 10023,Alejandro Salgueiro,1987,Male,False,Immediate shelter,False,True,False,False,HS013,,True,28.11.2023,
+10024,John Doe,1988,Male,True,Immediate shelter,False,False,False,True,,,,,
+10025,John Doe,1988,Male,True,Basic,False,False,False,True,,LB026,,,
+10026,Edward He,1982,Male,False,Basic,False,False,False,True,,LB027,,,
+10027,Lucas Rivero,1995,Male,True,Basic,False,False,False,True,,LB026,,,

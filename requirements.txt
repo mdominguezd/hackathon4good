@@ -3,7 +3,6 @@ geopandas
 owslib
 shapely
 pandas
-gdal
 matplotlib
 dash
 plotly

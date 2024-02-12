@@ -12,7 +12,7 @@ st.title(':house: HagueHaven')
         
 authenticator = AUTH()
 
-name, authentication_status, username =  authenticator.login('Login', 'main')
+name, authentication_status, username =  authenticator.login(fields = {'Form name':'Login', 'Username':'Username', 'Password':'Password', 'Login':'Login'}, location = 'main')
 
 if name is not None:
     
